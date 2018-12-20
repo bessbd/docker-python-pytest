@@ -1,3 +1,3 @@
 FROM python
-RUN apt-get update ; apt-get install docker.io -y && \
+RUN curl -fsSL https://get.docker.com | bash && \
   pip install pytest flake8
