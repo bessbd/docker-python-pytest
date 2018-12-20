@@ -1,2 +1,3 @@
 FROM python
-RUN pip install pytest flake8
+RUN apt-get update ; apt-get install docker.io -y && \
+  pip install pytest flake8
